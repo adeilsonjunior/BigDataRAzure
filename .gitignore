@@ -1,0 +1,13 @@
+# Ignorar arquivos CSV em qualquer localização
+**/*.csv
+
+# Ignorar arquivos TSV em qualquer localização
+**/*.tsv
+
+# Ignorar arquivos JSON em qualquer localização
+**/*.json
+
+# Ignorar arquivos RData em qualquer localização
+**/*.RData
+
+**/*.xlsx
