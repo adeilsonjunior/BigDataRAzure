@@ -7,6 +7,10 @@
 # Configurando o diretório de trabalho
 # Coloque entre aspas o diretório de trabalho que você está usando no seu computador
 # Não use diretórios com espaço no nome
+<<<<<<< HEAD
+=======
+# setwd("C:/FCD/BigDataRAzure/Cap06")
+>>>>>>> master
 setwd("C:/desenvolvimento/cursos/DSAcademy_BigDataAnalytics-com-R-e-MicrosoftAzureMachineLearning/Cap06")
 getwd()
 
@@ -24,6 +28,10 @@ library(factoextra)
 # Função para carregar os dados da planilha Excel
 carrega_dados <- function()
 {
+<<<<<<< HEAD
+=======
+  # setwd('~/Dropbox/DSA/BigDataAnalytics-R-Azure/Cap06')
+>>>>>>> master
   setwd('C:/desenvolvimento/cursos/DSAcademy_BigDataAnalytics-com-R-e-MicrosoftAzureMachineLearning/Cap06')
   sheet1 <- read_excel('online_retail_II.xlsx', sheet = 'Year 2009-2010')
   sheet2 <- read_excel('online_retail_II.xlsx', sheet = 'Year 2010-2011')

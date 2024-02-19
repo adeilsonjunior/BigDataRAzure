@@ -1,0 +1,37 @@
+FORMAÇÃO CIENTISTA DE DADOS (FCD)
+
+1. Big Data Analytics com R e Microsoft Azure Machine Learning
+2. Big Data Real-Time Analytics com Python e Apache Spark
+3. Engenharia de Dados com Hadoop e Spark
+4. Machine Learning com R e Python
+5. Business Analytics
+6. Visualização de Dados e Design de Dashboards
+7. Preparação Para Carreira de Cientista de Dados (curso privado disponível 
+apenas para quem adquire a Formação completa), que contém os seguintes 
+módulos complementares e opcionais:
+	7.1. Bônus: Curso Sistema Operacional Linux, Docker e Kubernetes
+	7.2. Bônus: Introdução à Lógica de Programação 
+	7.3. Bônus: Soft Skills – Desenvolvendo Suas Habilidades Comportamentais 
+	7.4. Bônus: Criação de Portfólio de Projetos em Data Science 
+	7.5. Bônus: Governança de Dados 
+	7.6. Bônus: Web Scraping Para Análise de Dados 
+	7.7. Bônus: E-Gov Analytics
+	7.8. Bônus: Empreendedorismo em Data Science, IA e Blockchain 
+	7.9. Machine Learning com JavaScript e Go
+8.0. Data Science e Machine Learning com Linguagem Julia
+
+
+Big Data Analytics com R e Microsoft Azure Machine Learning
+
+1.Fundamentos da Linguagem R
+2.Linguagem R
+3.Linguagem R - Gráficos
+4.Manipulação de arquivos TXT, CSV e planilhas excel
+5.Trabalhando com bancos de dados relacionais e noSQL
+6.Manipulação de dados com R
+	16/02/24 - 30%
+7.Introdução à análise estatística de dados 1
+8.Introdução à análise estatística de dados 2
+9.Introdução à análise estatística de dados 3
+10.Machine learning em R
+11.Azure machine learning
