@@ -6,7 +6,8 @@
 # Configurando o diretório de trabalho
 # Coloque entre aspas o diretório de trabalho que você está usando no seu computador
 # Não use diretórios com espaço no nome
-setwd("C:/FCD/BigDataRAzure/Cap07")
+# setwd("C:/FCD/BigDataRAzure/Cap07")
+setwd("C:\\desenvolvimento\\cursos\\DSAcademy_BigDataAnalytics-com-R-e-MicrosoftAzureMachineLearning\\Cap07")
 getwd()
 
 # Instalando os pacotes
@@ -69,6 +70,7 @@ dt5[, .(Sepal.Length = median(Sepal.Length),
 # O parâmetro .SD significa Subset Data e um subset é criado considerando a coluna Species e depois 
 # é calculda a mediana. O resultado deve ser igual ao comando anterior. 
 # O .SD faz parte da notação do pacote data.table.
+# O .SD significa subset table
 dt5[, lapply(.SD, median), by = Species]
 
 

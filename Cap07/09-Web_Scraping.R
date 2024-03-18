@@ -10,7 +10,8 @@
 # Configurando o diretório de trabalho
 # Coloque entre aspas o diretório de trabalho que você está usando no seu computador
 # Não use diretórios com espaço no nome
-setwd("C:/FCD/BigDataRAzure/Cap07")
+# setwd("C:/FCD/BigDataRAzure/Cap07")
+setwd("C:\\desenvolvimento\\cursos\\DSAcademy_BigDataAnalytics-com-R-e-MicrosoftAzureMachineLearning\\Cap07")
 getwd()
 
 
@@ -40,7 +41,9 @@ library(readr)
 
 # Leitura da web page - Retorna um documento xml
 webpage <- read_html("https://www.nytimes.com/interactive/2017/06/23/opinion/trumps-lies.html")
+?read_html
 webpage
+str(webpage)
 
 
 # Extraindo os registros
@@ -49,11 +52,13 @@ webpage
 ?html_nodes
 results <- webpage %>% html_nodes(".short-desc")
 results
+View(results)
 
 
 # Construindo o dataset
 records <- vector("list", length = length(results))
 records
+length(results)
 
 for (i in seq_along(results)) {
   date <- str_c(results[i] %>% 
@@ -74,11 +79,13 @@ for (i in seq_along(results)) {
 
 # Dataset final
 df <- bind_rows(records)
+View(df)
 
 
 # Transformando o campo data para o formato Date em R
 df$date <- mdy(df$date)
-
+View(df)
+?mdy
 
 # Exportando para CSV
 write_csv(df, "mentiras_trump.csv")

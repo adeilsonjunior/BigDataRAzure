@@ -6,7 +6,8 @@
 # Configurando o diretório de trabalho
 # Coloque entre aspas o diretório de trabalho que você está usando no seu computador
 # Não use diretórios com espaço no nome
-setwd("C:/FCD/BigDataRAzure/Cap07")
+# setwd("C:/FCD/BigDataRAzure/Cap07")
+setwd("C:\\desenvolvimento\\cursos\\DSAcademy_BigDataAnalytics-com-R-e-MicrosoftAzureMachineLearning\\Cap07")
 getwd()
 
 # http://www.quantmod.com
@@ -23,7 +24,8 @@ library(moments)
 
 # Seleção do período de análise
 startDate = as.Date("2018-01-21")
-endDate = as.Date("2018-06-21")
+# endDate = as.Date("2018-06-21")
+endDate = as.Date("2024-02-20")
 
 
 # Download dos dados do período
@@ -35,7 +37,7 @@ getSymbols("PETR4.SA", src = "yahoo", from = startDate, to = endDate, auto.assig
 
 
 # Checando o tipo de dado retornado
-class(PETR4.SA)
+class(PETR4.SA) # "xts" "zoo"->Formato de séries temporais em R
 is.xts(PETR4.SA)
 
 
@@ -46,15 +48,17 @@ View(PETR4.SA)
 
 # Analisando os dados de fechamento 
 PETR4.SA.Close <- PETR4.SA[, "PETR4.SA.Close"]
+View(PETR4.SA.Close) # repare que traz um índice
 is.xts(PETR4.SA.Close)
 ?Cl
-head(Cl(PETR4.SA),5)
+head(Cl(PETR4.SA),5) # é o mesmo que PETR4.SA.Close <- PETR4.SA[, "PETR4.SA.Close"]
 
 
 # Agora, vamos plotar o gráfico da Petrobras
 # Gráfico de candlestick da Petrobras
 ?candleChart
 candleChart(PETR4.SA)
+candleChart(PETR4.SA.Close)
 
 
 # Plot do fechamento
