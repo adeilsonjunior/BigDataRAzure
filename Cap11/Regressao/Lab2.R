@@ -6,7 +6,7 @@ library(corrplot)
 library(ggplot2)
 
 # Carrega o dataset
-df_dsa <- read.csv("dataset.csv")
+df_dsa <- read.csv("Regressao/dataset.csv")
 
 # Visualiza os dados
 View(df_dsa)
