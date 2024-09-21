@@ -5,6 +5,9 @@
 
 # Lembrete: Ajuste sua pasta de trabalho conforme necessário!
 
+setwd("C:/FCD/BigDataRAzure/Cap11/Classificacao")
+getwd()
+
 # Carregando os pacotes necessários
 library(caret)
 library(dplyr)
