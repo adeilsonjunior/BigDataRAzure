@@ -5,6 +5,9 @@
 # Suposição do teste:
 # As variáveis devem ser independentes!
 
+setwd("C:/FCD/BigDataRAzure/Cap11")
+getwd()
+
 # Carregando o dataset
 df = read.csv("dados.csv")
 
@@ -17,6 +20,7 @@ dim(df)
 # Separando x e y
 x = df$Tipo_Imovel
 unique(x)
+View(x)
 
 y = df$Status_Imovel
 unique(y)
